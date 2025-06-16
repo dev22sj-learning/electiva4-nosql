@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "337949545605",
+    "project_id": "electiva4-cb9f8",
+    "storage_bucket": "electiva4-cb9f8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337949545605:android:79c8a3e7349cea3adc85ec",
+        "android_client_info": {
+          "package_name": "com.example.nosql"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx3QRxIRSnGdvrppTWf9XK9DftFkpN7ig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
