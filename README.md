@@ -13,3 +13,5 @@ Autenticación con Firebase Auth y gestión de colecciones en Firestore utilzian
 
 ### Message Added
 ![Capture](assets/Screenshot_20250616_152637.png)
+
+![Capture](assets/Screenshot_2.png)
