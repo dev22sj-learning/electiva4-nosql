@@ -11,6 +11,15 @@ android {
     namespace = "com.example.nosql"
     compileSdk = 35
 
+    signingConfigs {
+        create("release") { // Para Kotlin DSL, usamos "create" en lugar de "release { ... }"
+            storeFile = file("D:\\Projects\\Learning\\Americana\\2025-1\\Movil 1\\americana-keystore.jks")
+            storePassword = "JScruz"
+            keyAlias = "key0"
+            keyPassword = "JScruz"
+        }
+    }
+
     defaultConfig {
         applicationId = "com.example.nosql"
         minSdk = 30
@@ -19,15 +28,19 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = false // Cambiar a true si se usa ProGuard
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release") // Vincula la firma
         }
     }
     compileOptions {
